@@ -1,7 +1,7 @@
 import React from "react";
 
 const MovieCard = ({ movie, selectMovie }) => {
-  const { id, title: name, release_date: date, overview: info } = movie;
+  const {  title: name, release_date: date} = movie;
 
   const handleScrollToTop = () => {
     window.scrollTo({top: 0, behavior: 'smooth'})
