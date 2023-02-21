@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #090A0E;
+  color: #f9efde;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button {
+  background: rgb(14, 14, 14);
+  border: 1px solid #f8d214;
+  border-radius: .25rem;
+  color: #fff;
+  outline: none;
+  padding: .5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button--close {
+  position: absolute;
+  z-index: 10;
+  bottom: 30px;
+  left: 30px;
+}
+
+.button:hover {
+  background:rgb(45, 45, 45);
+  transform: scale(1.1);
+  transition: all .25s linear;
+}
+
+.hero {
+  position: relative;
+  min-height: 650px;
+  background-position: top center;
+  background-size: cover;
   display: flex;
-  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+}
+
+.hero-content {
+  text-shadow: 2px 2px rgb(0, 0, 0);
+  color: #d3c3b2;
+  max-width: 100%;
+  padding-bottom: 60px;
+}
+.hero-title {
+  font-size: 98px;
+  margin: 5px;
+  text-shadow: 2px 2px #0b0b0b;
+}
+
+.max-center {
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+}
+
+span.title-head {
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+
+.header-content {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.youtube-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span1 {
+  color: red;
+}
+.input-bar{
+  border-radius: .25rem;
+  font-size: 1.3rem;
+  padding: 0 10px;
+  margin-top: .5rem;
+}
+.submit {
+  font-size: 1rem;
+  padding: .25rem .4rem;
+  border-radius: .25rem;
+  background: #ac9772;
+  color: #fff;
+  cursor: pointer;
+  margin-top: .5rem;
+}
+
+.submit:hover {
+  background: #6a5d48;
+  transition: all .3s linear;
+}
+
+.container {
+  width: 1450px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin: auto 190px;
+  margin-bottom: 2.5rem;
+  background-color: #121316;
+  padding: 15px;
+  border-radius: .5rem;
+}
+
+.movie-card {
+  background: rgb(21, 20, 20);
+  color: #f7eddb;
+  height: 500px;
+  width: 320px;
+  text-align: center;
+  border-radius: .5rem;
+  border: 1px solid rgb(201, 174, 22);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 1rem;
+  margin-top: .5rem;
+}
+
+.movie-card:hover {
+  background: #aea493;
+  color: black;
+  transition: all .25s linear;
+  /* transform: scale(1.1); */
+  cursor: pointer;
+}
+
+.movie-card h5, p {
+  margin-top: -5px;
+}
+.movie-card h5 {
+  margin-top: .5rem;
+}
+
+.movie-card p{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.img {
+  width: 225px;
+  height: 320px;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.img:hover {
+  transform: scale(1.1);
+  transition: all .3s linear;
+}
+
+.btn{
+  background: rgb(193, 153, 100);
+  color: #fff;
+  padding: .35rem .5rem;
+  border-radius: .5rem;
+  margin-top: -15px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all .25s linear;
+}
+
+.btn:hover {
+  background: rgb(126, 106, 80);
+  transition: all .25s linear;
 }
