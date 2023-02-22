@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,17 +6,17 @@
 }
 
 body {
-  background: #090A0E;
+  background: #090a0e;
   color: #f9efde;
 }
 
 .button {
   background: rgb(14, 14, 14);
   border: 1px solid #f8d214;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   color: #fff;
   outline: none;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .button--close {
@@ -27,9 +27,9 @@ body {
 }
 
 .button:hover {
-  background:rgb(45, 45, 45);
+  background: rgb(45, 45, 45);
   transform: scale(1.1);
-  transition: all .25s linear;
+  transition: all 0.25s linear;
 }
 
 .hero {
@@ -87,25 +87,25 @@ span.title-head {
 span1 {
   color: red;
 }
-.input-bar{
-  border-radius: .25rem;
+.input-bar {
+  border-radius: 0.25rem;
   font-size: 1.3rem;
   padding: 0 10px;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 .submit {
   font-size: 1rem;
-  padding: .25rem .4rem;
-  border-radius: .25rem;
+  padding: 0.25rem 0.4rem;
+  border-radius: 0.25rem;
   background: #ac9772;
   color: #fff;
   cursor: pointer;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .submit:hover {
   background: #6a5d48;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
 }
 
 .container {
@@ -117,7 +117,7 @@ span1 {
   margin-bottom: 2.5rem;
   background-color: #121316;
   padding: 15px;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .movie-card {
@@ -126,29 +126,30 @@ span1 {
   height: 500px;
   width: 320px;
   text-align: center;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: 1px solid rgb(201, 174, 22);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-bottom: 1rem;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .movie-card:hover {
   background: #aea493;
   color: black;
-  transition: all .25s linear;
+  transition: all 0.25s linear;
   /* transform: scale(1.1); */
   cursor: pointer;
 }
 
-.movie-card h5, p {
+.movie-card h5,
+p {
   margin-top: -5px;
 }
 .movie-card h5 {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
-.movie-card p{
+.movie-card p {
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -157,28 +158,222 @@ span1 {
   height: 320px;
   margin-top: 1rem;
   cursor: pointer;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .img:hover {
   transform: scale(1.1);
-  transition: all .3s linear;
+  transition: all 0.3s linear;
 }
 
-.btn{
+.btn {
   background: rgb(193, 153, 100);
   color: #fff;
-  padding: .35rem .5rem;
-  border-radius: .5rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: 0.5rem;
   margin-top: -15px;
   outline: none;
   border: none;
   cursor: pointer;
-  transition: all .25s linear;
+  transition: all 0.25s linear;
 }
 
 .btn:hover {
   background: rgb(126, 106, 80);
-  transition: all .25s linear;
+  transition: all 0.25s linear;
+}
+
+/* Media query */
+@media (max-width: 1024px) {
+  .hero {
+    position: relative;
+    min-height: 460px;
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+  }
+  /* .header {
+    display: flex;
+  } */
+  .hero-title {
+    font-size: 28px;
+    margin: 5px;
+    text-shadow: 2px 2px #0b0b0b;
+    padding: 10px;
+  }
+  p {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  span.title-head {
+    font-size: 1.3rem;
+    padding-right: 15px;
+    margin-top: 5px;
+    /* margin-right: 30px; */
+  }
+
+  .submit {
+    padding: 8px;
+    font-size: 12px;
+  }
+  .button {
+    margin-top: 1.5rem;
+    margin: 10px;
+    padding: 12px;
+    font-size: 0.75rem;
+  }
+  .input-bar {
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    padding: 0 12px;
+    margin-top: 0.5rem;
+    margin-right: 4px;
+  }
+  .max-center {
+    max-width: 1200px;
+  }
+  .container {
+    width: 430px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin: auto 60px;
+    margin-bottom: 2.5rem;
+    background-color: #121316;
+    padding-left: 60px;
+    border-radius: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    position: relative;
+    min-height: 360px;
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+    width: 932px;
+  }
+
+  .hero-title {
+    font-size: 28px;
+    margin: 5px;
+    text-shadow: 2px 2px #0b0b0b;
+    padding: 10px;
+  }
+  p {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  span.title-head {
+    font-size: 1.3rem;
+    padding-left: 10px;
+    margin-right: 205px;
+    margin-left: 15px;
+    margin-top: 5px;
+  }
+
+  .submit {
+    padding: 10px;
+    font-size: 14px;
+    padding-left: 8px;
+  }
+
+  .button {
+    margin-top: 1.5rem;
+    margin: 10px;
+    padding: 12px;
+    font-size: 0.75rem;
+  }
+  .input-bar {
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    padding: 2px 2px;
+    margin-top: 0.5rem;
+    margin-right: 2px;
+  }
+  .max-center {
+    max-width: 1200px;
+  }
+  .container {
+    width: 852px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: auto 40px;
+    margin-bottom: 2.5rem;
+    background-color: #121316;
+    padding-left: 60px;
+    border-radius: 0.5rem;
+  }
+}
+@media (max-width: 412px) {
+  .hero {
+    position: relative;
+    min-height: 460px;
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+  }
+  .header {
+    display: flex;
+  }
+  .hero-title {
+    font-size: 28px;
+    margin: 5px;
+    text-shadow: 2px 2px #0b0b0b;
+    padding: 10px;
+  }
+  p {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  span.title-head {
+    font-size: 0.75rem;
+    padding-left: 2px;
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+
+  .submit {
+    padding: 5px;
+    font-size: 12px;
+  }
+  .button {
+    margin-top: 1.5rem;
+    margin: 10px;
+    padding: 8px;
+    font-size: 0.75rem;
+  }
+  .input-bar {
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    padding: 0 3px;
+    margin-top: 0.5rem;
+    margin-right: 2px;
+  }
+  .max-center {
+    max-width: 456px;
+  }
+  .container {
+    width: 352px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin: auto 30px;
+    margin-bottom: 2.5rem;
+    background-color: #121316;
+    padding: 15px;
+    border-radius: 0.5rem;
+  }
 }
